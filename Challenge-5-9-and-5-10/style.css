@@ -1,0 +1,20 @@
+.video-container {
+  position: relative;
+  text-align: center;
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

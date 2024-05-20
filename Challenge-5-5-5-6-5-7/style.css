@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.navbar a {
+  padding: 20px 18px;
+  text-decoration: none;
+  color: red;
+  display: block;
+  text-align: center;
+  float: left;
+}
+
+.navbar a:hover {
+  background: #fff;
+  color: black;
+}
+
+.main {
+  margin-top: 35px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 300px;
+  padding: 15px;
+}
+.column1 {
+  background-color: greenyellow;
+}
+.column2 {
+  background-color: palevioletred;
+}
+.row {
+  color: bisque;
+}
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+p {
+  color: red;
+  font-weight: bold;
+}
+
+p:hover {
+  color: blue;
+}
