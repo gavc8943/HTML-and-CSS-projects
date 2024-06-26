@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classic Cars</title>
+    <script src="JS/one_page_website.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./images/thumbs/favicon.png" />
     <link rel="stylesheet" href="one_page_website.css" />
   </head>
@@ -44,7 +45,7 @@
         <div id="flex-container">
           <!--PHOTO CONTAINER 1-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(1)">
               <img
                 src="./images/thumbs/thumbnail_1.jpg"
                 alt=""
@@ -61,7 +62,7 @@
 
           <!--PHOTO CONTAINER 2-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(2)">
               <img
                 src="./images/thumbs/thumbnail_2.jpg"
                 alt=""
@@ -78,7 +79,7 @@
 
           <!--PHOTO CONTAINER 3-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(3)">
               <img
                 src="./images/thumbs/thumbnail_3.jpg"
                 alt=""
@@ -95,7 +96,7 @@
 
           <!--PHOTO CONTAINER 4-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(4)">
               <img
                 src="./images/thumbs/thumbnail_4.jpg"
                 alt=""
@@ -112,7 +113,7 @@
 
           <!--PHOTO CONTAINER 5-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(5)">
               <img
                 src="./images/thumbs/thumbnail_5.jpg"
                 alt=""
@@ -128,7 +129,7 @@
           <!--END PHOTO CONTAINER-->
           <!--PHOTO CONTAINER 6-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(6)">
               <img
                 src="./images/thumbs/thumbnail_6.jpg"
                 alt=""
@@ -144,7 +145,7 @@
           <!--END PHOTO CONTAINER-->
           <!--PHOTO CONTAINER 7-->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(7)">
               <img
                 src="./images/thumbs/thumbnail_7.jpg"
                 alt=""
@@ -160,7 +161,7 @@
           <!--END PHOTO CONTAINER-->
           <!--PHOTO CONTAINER 8 -->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(8)">
               <img
                 src="./images/thumbs/thumbnail_8.jpg"
                 alt=""
@@ -176,7 +177,7 @@
           <!--END PHOTO CONTAINER-->
           <!--PHOTO CONTAINER 9 -->
           <div class="photo-container">
-            <div class="photo">
+            <div class="photo" onclick="openModal();currentSlide(9)">
               <img
                 src="./images/thumbs/thumbnail_9.jpg"
                 alt=""
@@ -194,6 +195,154 @@
       </div>
     </section>
     <!--END GALLERY-->
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 9</div>
+          <img src="Images/Thumbs/pic_1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 9</div>
+          <img src="Images/Thumbs/pic_2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 9</div>
+          <img src="Images/Thumbs/pic_3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 9</div>
+          <img src="Images/Thumbs/pic_4.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 9</div>
+          <img src="Images/Thumbs/pic_5.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 9</div>
+          <img src="Images/Thumbs/pic_6.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 9</div>
+          <img src="Images/Thumbs/pic_7.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 9</div>
+          <img src="Images/Thumbs/pic_8.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 9</div>
+          <img src="Images/Thumbs/pic_9.jpg" style="width: 100%" />
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_1.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(1)"
+            alt="Classic Car"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_2.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(2)"
+            alt="Classic Car"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_3.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(3)"
+            alt="Classic Car"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_4.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(4)"
+            alt="Classic Car"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_5.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(5)"
+            alt="Classic Car"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_6.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(6)"
+            alt="Classic Car"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_7.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(7)"
+            alt="Classic Car"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_8.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(8)"
+            alt="Classic Car"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo"
+            src="Images/Thumbs/thumbnail_9.jpg"
+            width="100%"
+            height="100%"
+            onclick="currentSlide(9)"
+            alt="Classic Car"
+          />
+        </div>
+      </div>
+    </div>
 
     <!--VIDEO CONTAINER-->
     <section id="video">
